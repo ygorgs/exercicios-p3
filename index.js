@@ -1,21 +1,38 @@
 var express = require('express');
 var bodyParser =  require('body-parser');
+var path = require('path');
 var app = express();
-
-app.use(express.static(__dirname + '/public'));
-app.use(bodyParser.json());
 
 app.listen(process.env.PORT || 5000);
 
-app.all('*', function(req, res, next) {
-  res.header('Access-Control-Allow-Origin', '*');
-  res.header('Access-Control-Allow-Methods', 'PUT, GET, POST, DELETE, OPTIONS');
-  res.header('Access-Control-Allow-Headers', 'Content-Type');
+app.use(express.static(__dirname + '/public'));
+
+app.all('*', function(request, response, next) {
+  response.header('Access-Control-Allow-Origin', '*');
+  response.header('Access-Control-Allow-Methods', 'PUT, GET, POST, DELETE, OPTIONS');
+  response.header('Access-Control-Allow-Headers', 'Content-Type');
   next();
 });
 
-app.get('/' , function(req, res){
+app.set('views', __dirname + '/views');
+// app.set('view engine', 'ejs');
+// app.set('view options', {layout: false});
 
-	res.end('Servidor ON!');
-
+app.get('/' , function(request, response){
+	return response.sendFile(path.join(__dirname+'/client/views/exemplo1.html'));
 });
+
+// var http = require('http');
+// var fs = require('fs');
+
+// var server = http.createServer(function(request, response){
+// 	fs.readFile(__dirname + '/views/exemplo1.html', function(err, html){
+//     response.writeHeader(200, {'Content-Type': 'text/html'});
+//     response.write(html);
+//     response.end();
+//   });
+// });
+
+// server.listen(5000, function(){
+// 	console.log('Executando serviço HTTP');
+// });

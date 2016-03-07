@@ -1,6 +1,5 @@
-.jumbotron{
-	width: 600px;
-	text-align: center;
+.lista{
+	text-align: left;
 	margin-top: 20px;
 	margin-left: auto;
 	margin-right: auto;
@@ -8,7 +7,7 @@
 .table{
 	margin-top: 20px;
 }
-		.form-control{
+.form-control{
 	margin-bottom: 5px;
 }
 .selecionado{
