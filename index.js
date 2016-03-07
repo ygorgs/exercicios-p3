@@ -1,5 +1,4 @@
 var express = require('express');
-var bodyParser =  require('body-parser');
 var path = require('path');
 var app = express();
 
@@ -19,7 +18,11 @@ app.set('views', __dirname + '/views');
 // app.set('view options', {layout: false});
 
 app.get('/' , function(request, response){
-	return response.sendFile(path.join(__dirname+'/client/views/exemplo1.html'));
+	return response.sendFile(path.join(__dirname+'/client/views/index.html'));
+});
+
+app.listen(app.get('port'), function() {
+  console.log('Node app is running on port', app.get('port'));
 });
 
 // var http = require('http');
