@@ -18,7 +18,11 @@ app.set('views', __dirname + '/views');
 // app.set('view options', {layout: false});
 
 app.get('/' , function(request, response){
-	return response.sendFile(path.join(__dirname+'/client/views/index.html'));
+	return response.sendFile(path.join(__dirname+'/public/index.html'));
+});
+
+app.get('/livraria' , function(request, response){
+	return response.sendFile(path.join(__dirname+'/public/views/livraria.html'));
 });
 
 app.listen(app.get('port'), function() {
