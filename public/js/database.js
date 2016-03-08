@@ -9,7 +9,7 @@ var db =[
 		titulo: "O Hobbit",
 		autores: ["J. R. R. Tolkien"],
 		descricao: "Os hobbits são seres muito pequenos, menores do que os anões. São de boa paz, sua única ambição é uma boa terra lavrada e só gostam de lidar com ferramentas manuais. Este livro tem como personagem central o hobbit Bilbo Bolseiro. Ele vive muito tranquilo até que o mago Gandalf e uma companhia de anões o levam numa expedição para resgatar um tesouro guardado por Smaug, um dragão enorme e perigoso.",
-		capa: "http://ecx.images-amazon.com/images/I/41KyAMWKYSL._SX295_BO1,204,203,200_.jpg",
+		capa: "http://ecx.images-amazon.com/images/I/51BNzv2qeyL._SX331_BO1,204,203,200_.jpg",
 		preco: 26.99
 	},{
 		titulo: "Star Wars - A Trilogia",
@@ -26,38 +26,38 @@ var db =[
 	},{
 		titulo: "Eu Sou a Lenda",
 		autores: ["Richard Matheson"],
-		descricao: "Uma impiedosa praga assola o mundo, transformando cada homem, mulher e criança do planeta em algo digno dos pesadelos mais sombrios. Nesse cenário pós-apocalíptico, tomado por criaturas da noite sedentas de sangue, Robert Neville pode ser o último homem na Terra. Ele passa seus dias em busca de comida e suprimentos, lutando para manter-se vivo (e são). Mas os infectados espreitam pelas sombras, observando até o menor de seus movimentos, à espera de qualquer passo em falso... Eu sou a lenda, é considerado um dos maiores clássicos do horror e da ficção científica, tendo sido adaptado para o cinema três vezes."
+		descricao: "Uma impiedosa praga assola o mundo, transformando cada homem, mulher e criança do planeta em algo digno dos pesadelos mais sombrios. Nesse cenário pós-apocalíptico, tomado por criaturas da noite sedentas de sangue, Robert Neville pode ser o último homem na Terra. Ele passa seus dias em busca de comida e suprimentos, lutando para manter-se vivo (e são). Mas os infectados espreitam pelas sombras, observando até o menor de seus movimentos, à espera de qualquer passo em falso... Eu sou a lenda, é considerado um dos maiores clássicos do horror e da ficção científica, tendo sido adaptado para o cinema três vezes.",
 		capa: "http://ecx.images-amazon.com/images/I/51xxDnZu6FL._SX332_BO1,204,203,200_.jpg",
 		preco: 30.50
 	}, {
 		titulo: "As Crônicas de Nárnia",
 		autores: ["C. S Lewis"],
-		descricao: "Viagens ao fim do mundo, criaturas fantásticas e batalhas épicas entre o bem e o mal - o que mais um leitor poderia querer de um livro? O livro que tem tudo isso é O leão, a feiticeira e o guarda-roupa, escrito em 1949 por Clive Staples Lewis. Mas Lewis não parou por aí, seis outros livros vieram depois e, juntos, ficaram conhecidos como As crônicas de Nárnia. Nos últimos cinquenta anos, As crônicas de Nárnia transcenderam o gênero da fantasia para se tornar parte do cânone da literatura clássica. Cada um dos sete livros é uma obra-prima, atraindo o leitor para um mundo em que a magia encontra a realidade, e o resultado é um mundo ficcional que tem fascinado gerações. Esta edição apresenta todas as sete crônicas integralmente, num único volume magnífico. Os livros são apresentados de acordo com a ordem de preferência de Lewis, cada capítulo com uma ilustração do artista Pauline Baynes. Enganosamente simples e diretas, As crônicas de Nárnia continuam cativando os leitores com aventuras, personagens e fatos que falam a pessoas de todas as idades. Esta edição contém também o ensaio 'Três maneiras de escrever para crianças'."
+		descricao: "Viagens ao fim do mundo, criaturas fantásticas e batalhas épicas entre o bem e o mal - o que mais um leitor poderia querer de um livro? O livro que tem tudo isso é O leão, a feiticeira e o guarda-roupa, escrito em 1949 por Clive Staples Lewis. Mas Lewis não parou por aí, seis outros livros vieram depois e, juntos, ficaram conhecidos como As crônicas de Nárnia. Nos últimos cinquenta anos, As crônicas de Nárnia transcenderam o gênero da fantasia para se tornar parte do cânone da literatura clássica. Cada um dos sete livros é uma obra-prima, atraindo o leitor para um mundo em que a magia encontra a realidade, e o resultado é um mundo ficcional que tem fascinado gerações. Esta edição apresenta todas as sete crônicas integralmente, num único volume magnífico. Os livros são apresentados de acordo com a ordem de preferência de Lewis, cada capítulo com uma ilustração do artista Pauline Baynes. Enganosamente simples e diretas, As crônicas de Nárnia continuam cativando os leitores com aventuras, personagens e fatos que falam a pessoas de todas as idades. Esta edição contém também o ensaio 'Três maneiras de escrever para crianças'.",
 		capa: "http://ecx.images-amazon.com/images/I/51lwu3FTjGL._SX331_BO1,204,203,200_.jpg",
 		preco: 29.90
 	}, {
 		titulo: "Fortaleza Digital",
 		autores: ["Dan Brown"],
-		descricao: "Em Fortaleza Digital, Dan Brown mergulha no intrigante universo dos serviços de informação e ambienta sua história na ultrassecreta e multibilionária NSA, a Agência de Segurança Nacional americana, mais poderosa do que a CIA ou qualquer outra organização de inteligência do mundo."
+		descricao: "Em Fortaleza Digital, Dan Brown mergulha no intrigante universo dos serviços de informação e ambienta sua história na ultrassecreta e multibilionária NSA, a Agência de Segurança Nacional americana, mais poderosa do que a CIA ou qualquer outra organização de inteligência do mundo.",
 		capa: "http://ecx.images-amazon.com/images/I/512xTwg97dL._SX326_BO1,204,203,200_.jpg",
 		preco: 12.45
 	}, {
 		titulo: "O Cão dos Baskerville",
 		autores: ["Arthur Conan Doyle"],
-		descricao: "O detetive Sherlock Holmes e seu fiel amigo dr. Watson retornam em mais uma série de mistérios, assassinatos, pistas e perseguições em O cão dos Baskerville. Considerada uma das melhores aventuras do detetive, a obra foi originalmente impressa em partes, publicadas pela revista Strand Magazine de agosto de 1901 a abril de 1902, quando, no mesmo ano, foi lançada em formato de livro. O mistério a ser solucionado envolve a morte de Sir Charles Baskerville e um cão fantasmagórico que aterroriza os moradores da mansão Baskerville Hall. O cão dos Baskerville possui uma história eletrizante que se tornou um clássico da literatura policial e promete prender a atenção do leitor a cada virada de página."
+		descricao: "O detetive Sherlock Holmes e seu fiel amigo dr. Watson retornam em mais uma série de mistérios, assassinatos, pistas e perseguições em O cão dos Baskerville. Considerada uma das melhores aventuras do detetive, a obra foi originalmente impressa em partes, publicadas pela revista Strand Magazine de agosto de 1901 a abril de 1902, quando, no mesmo ano, foi lançada em formato de livro. O mistério a ser solucionado envolve a morte de Sir Charles Baskerville e um cão fantasmagórico que aterroriza os moradores da mansão Baskerville Hall. O cão dos Baskerville possui uma história eletrizante que se tornou um clássico da literatura policial e promete prender a atenção do leitor a cada virada de página.",
 		capa: "http://ecx.images-amazon.com/images/I/51KwSIimjhL._SX315_BO1,204,203,200_.jpg",
 		preco: 20.99
 	}, {
 		titulo: "Drácula",
 		autores: ["Bram Stoker"],
-		descricao: "O jovem advogado inglês Jonathan Harker é enviado por seu patrão à Transilvânia, no leste da Europa, para atender um misterioso cliente. Ao chegar, descobre que seu anfitrião é, na realidade, um poderoso vampiro - o conde Drácula - que pretende conquistar o mundo transferindo-se para a Inglaterra, onde será combatido por um grupo de corajosos cavalheiros."
+		descricao: "O jovem advogado inglês Jonathan Harker é enviado por seu patrão à Transilvânia, no leste da Europa, para atender um misterioso cliente. Ao chegar, descobre que seu anfitrião é, na realidade, um poderoso vampiro - o conde Drácula - que pretende conquistar o mundo transferindo-se para a Inglaterra, onde será combatido por um grupo de corajosos cavalheiros.",
 		capa: "http://ecx.images-amazon.com/images/I/517qeYna7HL._SX346_BO1,204,203,200_.jpg",
 		preco: 20.30
 	}, {
-		titulo: "O Pequeno Príncipe",
-		autores: [" Antonie de Saint-Exupéry"],
-		descricao: "Um piloto cai com seu avião no deserto e ali encontra uma criança loura e frágil. Ela diz ter vindo de um pequeno planeta distante. E ali, na convivência com o piloto perdido, os dois repensam os seus valores e encontram o sentido da vida. Com essa história mágica, sensível, comovente, às vezes triste, e só aparentemente infantil, o escritor francês Antoine de Saint-Exupéry criou há 70 anos um dos maiores clássicos da literatura universal. Não há adulto que não se comova ao se lembrar de quando o leu quando criança. Trata-se da maior obra existencialista do século XX, segundo Martin Heidegger. Livro mais traduzido da história, depois do Alcorão e da Bíblia, ele agora chega ao Brasil em nova edição, completa, com a tradução de Frei Betto e enriquecida com um caderno ilustrado sobre a obra e a curta e trágica vida do autor."
-		capa: "http://ecx.images-amazon.com/images/I/516xay6urHL._SX341_BO1,204,203,200_.jpg",
-		preco: 17,19
+		titulo: "O Peregrino",
+		autores: ["John Bunyan"],
+		descricao: "Um dos maiores clássicos da literatura cristã. Escrita no século XVII, esta obra fala sobre a caminhada de Cristão, um homem que deixou a Cidade da Destruição rumo à Cidade Celestial. No decorrer do caminho ele se depara com vários tipos de pessoas como, Fiel, Esperançoso e Ignorância, e também, percorre vários lugares como a Feira da Vaidade e o Vale da Sombra da morte. ",
+		capa: "http://ecx.images-amazon.com/images/I/51Zd4FXrLmL._SX377_BO1,204,203,200_.jpg",
+		preco: 30.00
 	}	
 ]

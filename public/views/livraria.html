@@ -1,13 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="Livraria">
 <head>
 	<meta charset='UTF-8'>
 	<title>Livraria</title>
+	<link rel="stylesheet" href="http://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
+	<link href='http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css' rel='stylesheet' type='text/css'>
 	<script src="../lib/angular/angular.js"></script>
 	<script src="../js/livrariaController.js"></script>
+	<script src="../js/database.js"></script>
 </head>
-<body>
-	<h3>Livraria</h3>
+<body ng-controller="LivrariaCtrl as ctrl">
+	<div class="callout large primary">
+		<div class="row column text-center">
+			<h1>Livraria</h1>
+		</div>
+	</div>
 
+	<div class="row" id="content">
+		<div class="medium-11 columns">
+			<div class="blog-post">
+				<h3>Awesome blog post title</h3>
+				<img class="thumbnail" src={{livro.capa}} width="200" height="500">
+				<p ng-class"{'negrito':True}">Descrição: {{livro.descricao}}</p>
+				<div class="callout">
+					<ul class="menu simple">
+						<li><a href="#">Author: Mike Mikers</a></li>
+						<li><a href="#">Comments: 3</a></li>
+					</ul>
+				</div>
+				<div>
+					<button class="button" ng-click="previous()">Anterior</button>
+					<button class="button" ng-click="next()">Próximo</button>
+					{{indice}}
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<hr/>
+	<div ng-include="'footer.html'"></div>
 </body>
 </html>
