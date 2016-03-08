@@ -59,5 +59,11 @@ var db =[
 		descricao: "Um dos maiores clássicos da literatura cristã. Escrita no século XVII, esta obra fala sobre a caminhada de Cristão, um homem que deixou a Cidade da Destruição rumo à Cidade Celestial. No decorrer do caminho ele se depara com vários tipos de pessoas como, Fiel, Esperançoso e Ignorância, e também, percorre vários lugares como a Feira da Vaidade e o Vale da Sombra da morte. ",
 		capa: "http://ecx.images-amazon.com/images/I/51Zd4FXrLmL._SX377_BO1,204,203,200_.jpg",
 		preco: 30.00
-	}	
+	}, {
+		titulo: "A Menina que Roubava Livros",
+		autores: ["Markus Zusak"],
+		descricao: "A trajetória de Liesel Meminger é contada por uma narradora mórbida, surpreendentemente simpática. Ao perceber que a pequena ladra de livros lhe escapa, a Morte afeiçoa-se à menina e rastreia suas pegadas de 1939 a 1943. Traços de uma sobrevivente: a mãe comunista, perseguida pelo nazismo, envia Liesel e o irmão para o subúrbio pobre de uma cidade alemã, onde um casal se dispõe a adotá-los por dinheiro. O garoto morre no trajeto e é enterrado por um coveiro que deixa cair um livro na neve. É o primeiro de uma série que a menina vai surrupiar ao longo dos anos. O único vínculo com a família é esta obra, que ela ainda não sabe ler.", 
+		capa: "http://ecx.images-amazon.com/images/I/41-x8itRwwL._SX349_BO1,204,203,200_.jpg",
+		preco: 18.99
+	}		
 ]

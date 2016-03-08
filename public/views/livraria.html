@@ -7,6 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="../css/app.css">
 	<link href='http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css' rel='stylesheet' type='text/css'>
 	<script src="../lib/angular/angular.js"></script>
+	<script src="../lib/angular/angular-locale_pt-br.js"></script>
 	<script src="../js/livrariaController.js"></script>
 	<script src="../js/database.js"></script>
 </head>
@@ -20,13 +21,29 @@
 	<div class="body" id="content">
 		<div class="blog-post">
 			<h3><b>{{livro.titulo}}</b></h3>
+			<p><b>{{getAutores()}}</b></p>
 			<img class="thumbnail" src={{livro.capa}} >
-			<p ng-class"{'negrito':True}"><b>Descrição:</b> {{livro.descricao}}</p>
-			<div class="callout">
-				<ul class="menu simple">
-					<li><a href="#">Author: Mike Mikers</a></li>
-					<li><a href="#">Comments: 3</a></li>
-				</ul>
+			<p class="description" style="word-wrap: break-word"><b>Descrição:</b> {{livro.descricao}}</p>
+			<h2><b>Preço: <font color="red">{{livro.preco | currency}}</font></b></h2>
+			<hr/>
+			<div>
+				<table class="table">
+					<tr>
+						<th>Comentários ({{livro.user.length}})</th>
+					</tr>
+					<tr ng-repeat="user in livro.user">
+						<td>
+							<p><b>Nome:</b> {{user.nome}}</p>
+							<p>{{user.comentario}}</p>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div class="form-group">
+				<input class="form-control" type="text" placeholder="Nome" ng-required= "true" ng-model="user.nome" 
+				ng-minlength="3" name="nome"/>
+				<input class="form-control comentario" type="text" placeholder="Comentário" ng-required= "true" ng-model="user.comentario" name="comentário"/>
+				<button class="btn btn-primary btn-block"  ng-click="addComentario(user)">Adicionar Comentário</button>
 			</div>
 			<div>
 				<button class="btn btn-primary"  ng-click="previous()">Anterior</button>
