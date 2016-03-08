@@ -27,6 +27,10 @@
 			<h2><b>Preço: <font color="red">{{livro.preco | currency}}</font></b></h2>
 			<hr/>
 			<div>
+				<button class="btn btn-primary"  ng-click="previous()">Anterior</button>
+				<button class="btn btn-primary"  ng-click="next()">Próximo</button>
+			</div>
+			<div>
 				<table class="table">
 					<tr>
 						<th>Comentários ({{livro.user.length}})</th>
@@ -44,10 +48,6 @@
 				ng-minlength="3" name="nome"/>
 				<input class="form-control comentario" type="text" placeholder="Comentário" ng-required= "true" ng-model="user.comentario" name="comentário"/>
 				<button class="btn btn-primary btn-block"  ng-click="addComentario(user)">Adicionar Comentário</button>
-			</div>
-			<div>
-				<button class="btn btn-primary"  ng-click="previous()">Anterior</button>
-				<button class="btn btn-primary"  ng-click="next()">Próximo</button>
 			</div>
 		</div>
 	</div>
