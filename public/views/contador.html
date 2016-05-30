@@ -1,0 +1,29 @@
+<html ng-app="Contador">
+<head>
+	<meta charset='UTF-8'>
+	<title>Contador</title>
+	<link rel="stylesheet" type="text/css" href="../lib/bootstrap/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../css/app.css">
+	<link href='http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css' rel='stylesheet' type='text/css'>
+	<script src="../lib/angular/angular.js"></script>
+	<script src="../lib/angular/angular-locale_pt-br.js"></script>
+	<script src="../js/contadorController.js"></script>
+</head>
+<body class="container" ng-controller="ContadorCtrl as ctrl">
+	<h2><b>Um Simples Contador</b><h2>
+
+	<div class="col-md-12">
+		<h1>{{ctrl.atual}}</h1>
+	</div>	
+	<div class="col-md-6">
+		<input class="form-control" type="number" placeholder="Valor Final" ng-model="ctrl.final">
+		<input type="number" class="form-control" id="milisegundos" ng-model="ctrl.milisegundos" placeholder="milisegundos">
+	</div>
+		<br>
+	<div class="col-md-12">	
+		<button type="button" ng-disabled="ctrl.state" class="btn btn-default" ng-click="ctrl.init()" name="buttonInit">Iniciar</button>
+        <button type="button" ng-disabled="!ctrl.state" class="btn btn-default" ng-click="ctrl.stop()" name="buttonStop">Parar</button>
+        <button type="button" ng-disabled="ctrl.state" class="btn btn-default" ng-click="ctrl.reset()" name="buttonReset">Resetar</button>
+    </div>
+</body>
+</html>

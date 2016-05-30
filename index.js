@@ -25,6 +25,10 @@ app.get('/livraria' , function(request, response){
 	return response.sendFile(path.join(__dirname+'/public/views/livraria.html'));
 });
 
+app.get('/contador' , function(request, response){
+	return response.sendFile(path.join(__dirname+'/public/views/contador.html'));
+});
+
 app.listen(app.get('port'), function() {
   console.log('Node app is running on port', app.get('port'));
 });
