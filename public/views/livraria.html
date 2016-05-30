@@ -52,6 +52,18 @@
 		</div>
 	</div>
 	<hr/>
+	<div class="body" id="content">
+		<div class="form-group">
+			<H3><b>Adicionar Livro</b></H3>
+			<input class="form-control" type="text" placeholder="Nome" ng-model="novoLivro.nome">
+			<input class="form-control" type="text" placeholder="Autor" ng-model="novoLivro.autor">
+			<input class="form-control" type="text" placeholder="Descrição" ng-model="novoLivro.descricao">
+			<input class="form-control" type="number" placeholder="Preço" ng-model="novoLivro.preco">
+			<input class="form-control" type="text" placeholder="Url da Imagem" ng-model="novoLivro.capa">
+			<button class="btn btn-primary btn-block"  ng-click="addLivro(novoLivro)">Adicionar Livro</button>
+		</div>
+	</div>
+	<hr/>
 	<div ng-include="'footer.html'"></div>
 </body>
 </html>

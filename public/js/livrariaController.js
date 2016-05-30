@@ -45,6 +45,10 @@
 			}
 			$scope.livro.user.push(user);
 			delete $scope.user;
-		}
+		};
+
+		$scope.addLivro = function(novoLivro){
+			livros.push(novoLivro);
+		};
 	});
 })()
